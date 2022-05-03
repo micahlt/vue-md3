@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 ![src/logo.png](src/logo.png)
 
@@ -9,6 +9,6 @@
 
 ---
 
-</center>
+</div>
 
 Documentation is coming soon.  In the meantime, keep an eye out on the [Storybook page](https://micahlindley.com/vue-md3).
