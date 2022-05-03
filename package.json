@@ -7,7 +7,9 @@
   "files": "dist/*",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,16 @@
     "vue": "^3.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/vue3": "^6.4.22",
+    "babel-loader": "^8.2.5",
     "rollup": "^2.71.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
-  }
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-loader": "^16.8.3"
+  },
+  "dependencies": {}
 }

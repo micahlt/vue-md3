@@ -1,0 +1,45 @@
+import { Meta } from "@storybook/addon-docs";
+import logo from "../logo.png";
+const w100 = "100%";
+
+<Meta title="MD3/Introduction" />
+
+<img src={logo} width={w100} />
+
+The `vue-md3` package provides Vue 3 components based (somewhat loosely) on the [Material You](https://m3.material.io/) design system. It is in _very_ early development, and you should not use it in production until it hits the 1.0 release.
+
+## To-Do List
+
+This project isn't near done. Here's everything we're working on.
+
+### `Button`
+
+- ✅ Create component
+- ⚒️ Standardize sizing on `outline` type
+- ⚒️ Add hover state to `secondary` type
+- ⚒️ Document the `mode` attribute
+
+### `Card`
+
+- ✅ Create component
+- ⚒️ Replace most props with a `<slot>` for flexibility
+- ⚒️ Add more intelligent header image recognition
+
+### Components to be added
+
+Below are the components that have been built, but need to be significantly edited before being added to `vue-md3`
+
+- `Chip`
+  - Need to remove the shadows to follow Material Guidelines
+- `Dialog`
+  - Currently doesn't follow Material Guidelines at all, should be rewritten
+- `NavBar`
+  - This component takes the place of both the navigation bar and navigation rail
+- `Select`
+  - This isn't an official Material component
+- `Switch`
+  - Scaling feels off - should be smaller
+
+### Theming issues
+
+All components are based on CSS variables that switch to dark mode. We need to add some sort of toggle that will allow Storybook to switch in-between both themes. We should also really switch our custom variables to schemes exported from the [Material Theme Builder](https://material-foundation.github.io/material-theme-builder/#/custom).
