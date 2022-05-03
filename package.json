@@ -1,6 +1,6 @@
 {
   "name": "vue-md3",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Material You components for Vue 3",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
