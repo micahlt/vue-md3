@@ -1,0 +1,30 @@
+{
+  "name": "vue-md3",
+  "version": "0.0.1",
+  "description": "Material You components for Vue 3",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "files": "dist/*",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micahlt/vue-md3.git"
+  },
+  "author": "Micah Lindley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micahlt/vue-md3/issues"
+  },
+  "homepage": "https://github.com/micahlt/vue-md3#readme",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.71.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}
